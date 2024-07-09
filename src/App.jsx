@@ -1,14 +1,15 @@
-import { useState } from 'react'
-
 import './App.css'
-import Work from './components/work/Work'
+import Hero from './components/Hero/Hero'
+import Navbar from './components/Navbar/Navbar'
+// import Work from './components/work/Work'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Work></Work>
+      <Navbar />
+      <Hero />
+      {/* <Work /> */}
     </>
   )
 }

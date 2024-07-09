@@ -1,0 +1,309 @@
+nav {
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo img {
+  width: 80px;
+}
+
+.menuButton {
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+}
+
+.menuLogo {
+  font-size: 30px;
+}
+
+.navMenu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -100%;
+  /* top: 0; */
+  left: 0;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transition: .5s all ease-in;
+  z-index: 9999;
+}
+
+.activeNav {
+  top: 0 !important;
+}
+
+.crossLogo {
+  align-self: flex-end;
+  font-size: 40px;
+  margin-top: 42px;
+  margin-right: 82px;
+  cursor: pointer;
+}
+
+.menuContent {
+  display: flex;
+  padding: 50px 30px;
+  gap: 100px;
+  align-items: center;
+}
+
+.menuElements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.menuElements a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-size: 50px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  position: relative;
+}
+
+.menuElements a:hover {
+    top: -5px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactInfo h1 {
+  font-size: 150px;
+  background: linear-gradient(0deg, #03001e, #7303c0, #ec38bc, #fee0f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-family: "Montserrat", sans-serif;
+
+  animation: animatedText 20s infinite ease-in-out;
+}
+
+.contactInfo a {
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  letter-spacing: 3px;
+}
+
+.contactInfo .socialLogos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  font-size: 40px;
+}
+
+.contactInfo .socialLogos .sologo {
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.contactInfo .socialLogos .sologo:hover {
+  color: #7303c0;
+}
+
+@keyframes animatedText {
+  0% {
+    background-image: linear-gradient(0deg, #03001e, #7303c0, #ec38bc, #fee0f6);
+  }
+  5% {
+    background-image: linear-gradient(
+      18deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  10% {
+    background-image: linear-gradient(
+      36deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  15% {
+    background-image: linear-gradient(
+      54deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      72deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  25% {
+    background-image: linear-gradient(
+      90deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      108deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  35% {
+    background-image: linear-gradient(
+      126deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      144deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  45% {
+    background-image: linear-gradient(
+      162deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      180deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  55% {
+    background-image: linear-gradient(
+      198deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      216deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  65% {
+    background-image: linear-gradient(
+      234deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  70% {
+    background-image: linear-gradient(
+      252deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  75% {
+    background-image: linear-gradient(
+      270deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      288deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  85% {
+    background-image: linear-gradient(
+      306deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      324deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  95% {
+    background-image: linear-gradient(
+      342deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      360deg,
+      #03001e,
+      #7303c0,
+      #ec38bc,
+      #fee0f6
+    );
+  }
+}
