@@ -1,7 +1,10 @@
 import './App.css'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
-// import Work from './components/work/Work'
+import Work from './components/work/Work'
+
 
 function App() {
 
@@ -9,7 +12,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {/* <Work /> */}
+      <Work />
+      <Contact />
+      <Footer />
     </>
   )
 }
