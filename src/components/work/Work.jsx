@@ -70,7 +70,7 @@ const Work = () => {
         </div>
         <div className="Project">
           <div className="Projectimage">
-            <img src="./images/LakhanPorfolio.jpg" alt="error" />
+            <img src="./images/LakhanPotfolio.jpg" alt="error" />
           </div>
           <div className="projectinfo">
             <div className="Projectname">Porfolio</div>
