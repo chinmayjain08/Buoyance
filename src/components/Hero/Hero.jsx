@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="ddd">
         <span>DESIGN</span>
         <div className='ddddot'></div>
-        <span>DEVELOPE</span>
+        <span>DEVELOP</span>
         <div className='ddddot'></div>
         <span>DEPLOY</span>
       </div>

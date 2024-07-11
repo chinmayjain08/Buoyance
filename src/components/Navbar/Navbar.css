@@ -1,12 +1,15 @@
 nav {
   display: flex;
-  padding: 20px 80px;
+  padding: 10px 80px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .navLogo img {
-  width: 80px;
+  width: 60px;
 }
 
 .menuButton {
@@ -21,7 +24,7 @@ nav {
 }
 
 .menuLogo {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navMenu {
@@ -35,7 +38,7 @@ nav {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  transition: .5s all ease-in;
+  transition: 0.5s all ease-in;
   z-index: 9999;
 }
 
@@ -46,8 +49,8 @@ nav {
 .crossLogo {
   align-self: flex-end;
   font-size: 40px;
-  margin-top: 42px;
-  margin-right: 82px;
+  margin-top: 30px;
+  margin-right: 80px;
   cursor: pointer;
 }
 
@@ -77,7 +80,7 @@ nav {
 }
 
 .menuElements a:hover {
-    top: -5px;
+  top: -5px;
 }
 
 .contactInfo {
@@ -120,6 +123,77 @@ nav {
 
 .contactInfo .socialLogos .sologo:hover {
   color: #7303c0;
+}
+
+@media screen and (max-width: 800px) {
+  .menuContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .menuElements {
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menuElements a {
+    font-size: 2rem;
+  }
+
+  .contactInfo {
+    align-items: center;
+  }
+
+  .contactInfo h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    padding: 10px 40px;
+  }
+
+  .crossLogo {
+    margin-top: 20px;
+    margin-right: 45px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .menuContent {
+    gap: 20px;
+  }
+
+  .contactInfo {
+    gap: 20px;
+  }
+
+  .contactInfo h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  .crossLogo {
+    margin-right: 20px;
+  }
+
+  .navLogo img {
+    width: 50px;
+  }
+  .menuLogo {
+    font-size: 20px;
+  }
+
+  .contactInfo a {
+    font-size: 1.4rem;
+  }
 }
 
 @keyframes animatedText {
